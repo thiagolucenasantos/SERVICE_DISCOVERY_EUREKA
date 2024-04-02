@@ -23,5 +23,4 @@ class ClienteDois {
         return "Eu sou o cliente 2";
     }
 
-
 }
