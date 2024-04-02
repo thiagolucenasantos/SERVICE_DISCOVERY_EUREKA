@@ -2,6 +2,9 @@ package br.com.thiago.apiteste1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class ApiTeste1Application {
@@ -11,5 +14,14 @@ public class ApiTeste1Application {
 	}
 
 }
+@RestController
+@RequestMapping("Cliente1")
+ class ClienteUm {
 
+    @GetMapping
+    public String Cliente1(){
+        return "Olá";
+    }
+
+}
 
